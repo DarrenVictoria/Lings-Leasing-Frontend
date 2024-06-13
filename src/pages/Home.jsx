@@ -31,7 +31,7 @@ const Home = () => {
               YOU CAN TRUST US 
             </p>
             <a
-              href="#"
+              href="/carvan-catalouge"
               className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-customAqua hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               CARS / VANS
@@ -86,7 +86,7 @@ const Home = () => {
 
 
       <div className="flex justify-center items-center my-8">
-        <h1 className="text-4xl font-bold text-center">CAR LEASING ONLINE SERVICES RESPONSE TIMES</h1>
+        <h1 className="text-4xl font-bold text-center px-4">CAR LEASING ONLINE SERVICES RESPONSE TIMES</h1>
       </div>
 
       <div className="flex justify-center items-center my-4">
@@ -115,12 +115,16 @@ const Home = () => {
 
       {/* Sort by Vehicle Brand Section */}
       <div className="flex justify-center items-center my-8">
-        <h1 className="text-4xl font-bold text-center">SORT BY VEHICLE BRAND</h1>
+        <h1 className="text-4xl font-bold text-center">SORT BY VEHICLE BRAND ALPHABETICALLY</h1>
       </div>
 
       <BrandGrid/>
 
       <Footer/>
+
+      
+
+
 
      
     </div>

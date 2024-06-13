@@ -5,16 +5,20 @@ const FAQAccordion = () => {
 
   const items = [
     {
-      title: 'What is Flowbite?',
-      youtubeUrl: 'https://www.youtube.com/embed/video_id_1',
+      title: 'Filling car proposal form?',
+      youtubeUrl: 'https://www.youtube.com/embed/H2HIZ_zuZw0?si=fyoGP8tpbHXx0vx9',
     },
     {
-      title: 'Is there a Figma file available?',
-      youtubeUrl: 'https://www.youtube.com/embed/video_id_2',
+      title: 'Will I pass new car finance?',
+      youtubeUrl: 'https://www.youtube.com/embed/Z-3at1rLykI?si=s9z_0B5ZauWXP_We',
     },
     {
-      title: 'What are the differences between Flowbite and Tailwind UI?',
-      youtubeUrl: 'https://www.youtube.com/embed/video_id_3',
+      title: 'Can someone apply for me?',
+      youtubeUrl: 'https://www.youtube.com/embed/3ru0lrYnUD8?si=MqF3kQq1mFq5Vi4Y',
+    },
+    {
+      title: 'Can I cancel an order?',
+      youtubeUrl: 'https://www.youtube.com/embed/o5MeKea2e_0?si=k8IUWSdqz7UlNhKS', 
     },
   ];
 
@@ -23,7 +27,7 @@ const FAQAccordion = () => {
   };
 
   return (
-    <div id="accordion-open" data-accordion="open" className='mx-8'>
+    <div id="accordion-open" data-accordion="open" className='mx-8 mb-16'>
       {items.map((item, index) => (
         <div key={index}>
           <h2 id={`accordion-open-heading-${index + 1}`}>
@@ -77,13 +81,15 @@ const FAQAccordion = () => {
           >
             <div className="aspect-w-16 aspect-h-9">
               {activeIndex === index && (
-                <iframe
-                  className="w-full h-full"
-                  src={item.youtubeUrl}
-                  title={`YouTube video: ${item.title}`}
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
+                <div className="video-wrapper">
+                  <iframe
+                    className="w-full h-full"
+                    src={item.youtubeUrl}
+                    title={`YouTube video: ${item.title}`}
+                    frameBorder="0"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               )}
             </div>
           </div>
