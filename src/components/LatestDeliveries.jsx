@@ -29,32 +29,32 @@ const vehicleData = [
 ];
 
 const LatestDeliveries = () => {
-    return (
-      <div className="flex flex-col items-center">
-        <div className="flex flex-wrap justify-center">
-          {vehicleData.map((vehicle, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center bg-gray-900 border border-gray-700 rounded-lg shadow m-2 w-64 sm:w-72"
-            >
-              <img
-                className="object-cover w-full h-40 rounded-t-lg"
-                src={vehicle.imagePath}
-                alt={vehicle.model}
-              />
-              <div className="flex flex-col justify-between p-4 leading-normal">
-                <h5 className="mb-2 text-lg font-bold tracking-tight text-white">
-                  {vehicle.model}
-                </h5>
-                <p className="mb-3 font-normal text-gray-400">
-                  Year: {vehicle.year}
-                </p>
-              </div>
+  return (
+    <div className="flex flex-col items-center">
+      <div className="flex flex-wrap justify-center gap-4">
+        {vehicleData.map((vehicle, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center bg-gray-900 border border-gray-700 rounded-lg shadow-lg m-2 w-full sm:w-64 md:w-72 transform transition-transform duration-300 hover:scale-105"
+          >
+            <img
+              className="object-cover w-full h-40 rounded-t-lg"
+              src={vehicle.imagePath}
+              alt={vehicle.model}
+            />
+            <div className="flex flex-col justify-between p-4 leading-normal">
+              <h5 className="mb-2 text-lg font-bold tracking-tight text-white">
+                {vehicle.model}
+              </h5>
+              <p className="mb-3 font-normal text-gray-400">
+                Year: {vehicle.year}
+              </p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    );
-  };
+    </div>
+  );
+};
 
 export default LatestDeliveries;
