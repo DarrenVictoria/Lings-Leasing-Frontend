@@ -66,7 +66,7 @@ const AboutUs = () => {
             <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
             <p className="mb-4">Feel free to reach out to us through any of the following methods:</p>
             <div className="flex items-center mb-2">
-              <FaPhone className="mr-2 text-gray-700" /> +1 487 574 5748
+              <FaPhone className="mr-2 text-gray-700" /> +44 191 460 9444
             </div>
             <div className="flex items-center mb-2">
               <FaEnvelope className="mr-2 text-gray-700" /> info@lingsleasing.com

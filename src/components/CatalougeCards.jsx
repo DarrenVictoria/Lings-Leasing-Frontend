@@ -177,7 +177,7 @@ const CatalougeCards = () => {
 
   return (
     <>
-      <form className="max-w-md mx-auto my-4">
+      <form className="max-w-md mx-auto my-4 px-2">
         <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
         <div className="relative mb-12">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
